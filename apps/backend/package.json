@@ -1,0 +1,6 @@
+{
+  "name": "backend",
+  "scripts": {
+    "dev": "mvn spring-boot:run"
+  }
+}

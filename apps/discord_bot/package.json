@@ -1,0 +1,6 @@
+{
+  "name": "discordbot",
+  "scripts": {
+    "dev": "mvn clean compile exec:java -Dexec.mainClass=\"com.notesbot.Bot\""
+  }
+}
