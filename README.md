@@ -81,7 +81,7 @@ mynotes/
    ```
 
 4. **Configure environment variables**
-   
+
    For the backend (`apps/backend`):
    - Create `src/main/resources/application.yml` with your database credentials:
      ```yaml
@@ -95,7 +95,7 @@ mynotes/
            ddl-auto: update
          show-sql: true
      ```
-   
+
    For the Discord bot (`apps/discord_bot`):
    - Copy `src/main/resources/config.properties.example` to `config.properties`
    - Add your Discord bot token:
