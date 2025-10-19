@@ -83,11 +83,26 @@ mynotes/
 4. **Configure environment variables**
    
    For the backend (`apps/backend`):
-   - Set up your `application.properties` or `application.yml` with database credentials
+   - Create `src/main/resources/application.yml` with your database credentials:
+     ```yaml
+     spring:
+       datasource:
+         url: jdbc:postgresql://localhost:5432/mynotes
+         username: your_username
+         password: your_password
+       jpa:
+         hibernate:
+           ddl-auto: update
+         show-sql: true
+     ```
    
    For the Discord bot (`apps/discord_bot`):
-   - Set your Discord bot token
-   - Configure backend API URL
+   - Copy `src/main/resources/config.properties.example` to `config.properties`
+   - Add your Discord bot token:
+     ```properties
+     DISCORD_BOT_TOKEN=your_discord_bot_token_here
+     ```
+   - Get your Discord bot token from the [Discord Developer Portal](https://discord.com/developers/applications)
 
 ### Running the Applications
 
