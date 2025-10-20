@@ -39,6 +39,6 @@ yarn-error.log*
 *.pem
 
 # Java environments
-resources/
+application.yml
 target/
 **/config.properties

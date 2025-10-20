@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: postgres_url
+    username: postgres_username
+    password: postgres_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  application:
+    name: notesapi
+
+discord:
+  client_id: client_id
+  client_secret: client_secret
+  redirect_uri: redirect_uri
+
+jwt:
+  secret: secret
